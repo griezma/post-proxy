@@ -15,7 +15,7 @@ dependencies {
 }
 
 ext {
-    dest_dir = file('c:/dev/Scratch/Docker/jee-app')
+    dest_dir = 'docker'
 }
 task copyWar(type: Copy) {
     description "Copy result into docker"

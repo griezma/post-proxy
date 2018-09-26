@@ -1,4 +1,4 @@
-package griezma.api.ruckus;
+package griezma.postproxy;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

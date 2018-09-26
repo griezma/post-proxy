@@ -1,4 +1,4 @@
-package griezma.api.ruckus;
+package griezma.postproxy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import javax.ejb.Singleton;
 
 @Singleton
-public class RuckusService {
+public class CacheService {
 	private List<String> eventList = new ArrayList<>();
 	
 	public void addEvent(String event) {

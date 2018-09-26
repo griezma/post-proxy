@@ -1,4 +1,4 @@
-package griezma.api.ruckus;
+package griezma.postproxy;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -18,15 +18,15 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.StreamingOutput;
 
-@Path("ruckus")
+@Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class RuckusResource {
+public class ProxyResource {
 	
 	@Inject
-	private RuckusService ruckus;
+	private CacheService ruckus;
 	
-	public RuckusResource() {
+	public ProxyResource() {
 		System.out.println("new RuckusResource");
 	}
 	
