@@ -1,0 +1,2 @@
+docker tag postproxy griezma/postproxy:latest
+docker push griezma/postproxy:latest
