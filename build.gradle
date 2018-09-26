@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'eclipse-wtp'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax:javaee-api:8.0'
+}
+
+ext {
+    dest_dir = file('c:/dev/Scratch/Docker/jee-app')
+}
+task copyWar(type: Copy) {
+    description "Copy result into docker"
+    from war
+    into dest_dir
+}
+
+build.dependsOn copyWar
