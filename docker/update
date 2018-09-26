@@ -1,2 +1,4 @@
+gradle build -p ..
+./build
 docker tag postproxy griezma/postproxy:latest
 docker push griezma/postproxy:latest
