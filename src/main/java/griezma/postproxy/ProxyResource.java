@@ -38,7 +38,7 @@ public class ProxyResource {
 	}
 	
 	@GET
-	@Path("ping")
+	@Path("check")
 	public String ping() {
 		return "works";
 	}
